@@ -1,7 +1,3 @@
-/**
- * Created by Евгения on 02.06.2015.
- */
-
 $(document).ready(function() {
 
     var owl = $("#gallery-slider");
@@ -33,7 +29,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#menu a').click(function(){
+    $('.ancLinks').click(function(){
         var id = $(this).attr('href');
         $("body, html").animate({"scrollTop": $(id).offset().top},"slow");
         return false;
